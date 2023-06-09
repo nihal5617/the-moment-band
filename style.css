@@ -165,8 +165,8 @@ button {
 }
 
 #button2:hover {
-  background-color: rgba(192, 1, 1, 0.808);
-  border: 2px solid rgba(192, 1, 1, 0.808);
+  background-color: rgba(138, 46, 223, 0.808);
+  border: 2px solid rgba(138, 46, 223, 0.808);
   color: lightgray;
 }
 
@@ -488,7 +488,7 @@ button {
   text-transform: uppercase;
 }
 .joinusonmobile h2 span {
-  color: red;
+  color: #551a8b;
   font-weight: 400;
 }
 .joinusonmobile p {
@@ -525,7 +525,7 @@ button {
 #sendbutton:hover {
   color: white;
   transition: 0.4s ease;
-  background-color: rgb(255 0 0 / 72%);
+  background-color: rgba(138, 46, 223, 0.733)
 }
 
 /* *************APP LINKS ******************** */
@@ -705,7 +705,7 @@ footer .rightside a {
     margin-top: 5px;
   }
   .menu a {
-    margin: 4px 11px;
+    display: none;
   }
   .title h1 {
     text-align: center;
@@ -720,7 +720,7 @@ footer .rightside a {
     margin: 4px 11px 0px 11px;
   }
   .container2 {
-    margin: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
   }
   .aboutme {
     display: inline-flex;
@@ -954,6 +954,7 @@ footer .rightside a {
   }
   footer .rightside {
     padding: 0px 0px 0px 0px;
+    width: 350px;
     text-align: center;
   }
   footer .rightside h4 {
