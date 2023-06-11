@@ -2,7 +2,9 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
-  background-color: black;
+  /* backround colour should be gradient */
+  background-color: #9dcbd8;
+  background-image: linear-gradient(315deg, #9dcbd8 0%, #000000 74%);
 }
 
 .marquee-wrapper {
@@ -57,7 +59,7 @@ header {
   color: lightgray;
 }
 .menu a:hover {
-  color: rgba(138, 46, 223, 0.733);
+  color: rgba(157,203,216,255)
 }
 
 /* ************NAVIGATION BAR LINKS *************** */
@@ -66,7 +68,7 @@ header {
   color: lightgray;
 }
 .links a i:hover {
-  color: rgba(138, 46, 223, 0.733);
+  color: rgba(157,203,216,255)
 }
 /* **************TITLE*********** */
 .title {
@@ -104,7 +106,7 @@ header {
   cursor: default;
 }
 .title h1 span {
-  color: rgba(138, 46, 223, 0.911);
+  color: rgba(157,203,216,255);
   font-size: 70px;
   animation-name: fadeIn;
   animation-duration: 0.5s;
@@ -145,7 +147,7 @@ button {
 /* *********BUTTON-SERVICES************** */
 #button1 {
   margin-right: 10px;
-  border: 2px solid rgba(138, 46, 223, 0.911);
+  border: 2px solid rgba(157,203,216,255);
   background-color: transparent;
   color: lightgray;
   cursor: pointer;
@@ -154,18 +156,18 @@ button {
 #button2 {
   margin-left: 10px;
   padding: 18px 42px;
-  background-color: rgba(138, 46, 223, 0.911);
-  border: 2px solid rgba(138, 46, 223, 0.911);
+  background-color: rgba(157,203,216, 0.911);
+  border: 2px solid rgba(157,203,216, 0.911);
   cursor: pointer;
 }
 #button1:hover {
-  background-color: rgba(138, 46, 223, 0.911);
+  background-color: rgba(157,203,216, 0.911);
   color: black;
 }
 
 #button2:hover {
-  background-color: rgba(138, 46, 223, 0.808);
-  border: 2px solid rgba(138, 46, 223, 0.808);
+  background-color: rgba(157,203,216, 0.808);
+  border: 2px solid rgba(157,203,216, 0.808);
   color: lightgray;
 }
 
@@ -176,7 +178,7 @@ button {
 }
 /* ***************BIG RED BOX FOR QUOTES */
 .container2 .solganblock {
-  background-color: rgba(138, 46, 223, 0.911);
+  background-color: rgba(157,203,216, 0.911);
   margin: 0%;
   padding: 20px 0px;
   font-family: "Raleway", sans-serif;
@@ -257,12 +259,13 @@ button {
 
 /* ****************PAGE 3*************** */
 .container3 {
-  margin: 0%;
-  padding: 4%;
-  border-top: 5px solid rgba(138, 46, 223, 0.911);
+  margin: 0px 8% 0px 8%;
+  padding: 2%;
+  border-top: 5px solid rgba(157,203,216, 0.911);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 8px;
+  background-image: url(images/check.gif);
 }
 /* ********HEADING PAGE 3************* */
 .headingpg3 {
@@ -283,7 +286,7 @@ button {
 }
 .headingpg3 h2 span {
   font-size: 76px;
-  color: rgba(138, 46, 223, 0.911);
+  color: rgba(157,203,216, 0.911);
   font-weight: bolder;
   line-height: 20px;
   font-family: "Lexend", sans-serif;
@@ -420,7 +423,8 @@ button {
   justify-content: space-evenly;
 }
 .review-box {
-  background-color: #551a8b;
+  background-color: black;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   border-radius: 10px;
   width: 300px;
   height: 200px;
@@ -487,7 +491,7 @@ button {
   text-transform: uppercase;
 }
 .joinusonmobile h2 span {
-  color: #551a8b;
+  color: #9dcbd8;
   font-weight: 400;
 }
 .joinusonmobile p {
@@ -524,7 +528,7 @@ button {
 #sendbutton:hover {
   color: white;
   transition: 0.4s ease;
-  background-color: rgba(138, 46, 223, 0.733)
+  background-color: rgba(157,203,216, 0.733)
 }
 
 /* *************APP LINKS ******************** */
@@ -588,7 +592,7 @@ textarea {
   border-radius: 2px;
 }
 #submitbtn:hover {
-  background-color: rgba(138, 46, 223, 0.815);
+  background-color: rgba(157,203,216, 0.815);
   color: white;
 }
 
@@ -686,12 +690,12 @@ footer .rightside a {
   font-weight: 400;
 }
 .designerspage .designerlink a {
-  color: #551a8b;
+  color: #9dcbd8;
   margin-right: 11px;
 }
 .designerright span a {
   text-decoration: none;
-  color: #551a8b;
+  color: #9dcbd8;
 }
 .designerright span a:hover {
   text-decoration: underline;
@@ -744,6 +748,9 @@ footer .rightside a {
     margin-right: 0%;
   }
   .recent {
+    margin: 0px 0px 0px 0px;
+  }
+  .container3{
     margin: 0px 0px 0px 0px;
   }
   .headingpg3 h2 {
