@@ -1,17 +1,15 @@
 body {
-  margin: 0%;
-  padding: 0%;
-  overflow-x: hidden;
-  /* backround colour should be gradient */
-  background-color: #9dcbd8;
-  background-image: linear-gradient(315deg, #9dcbd8 0%, #000000 74%);
+  background-image: url(images/profile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-position-x: 0px;
+  background-attachment: fixed;
 }
 
 .marquee-wrapper {
   width: 100%;
   overflow: hidden;
 }
-
 .marquee-content {
   display: inline-block;
   white-space: nowrap;
@@ -25,6 +23,21 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
 }
 
 .container-fluid {
@@ -63,40 +76,29 @@ header {
   color: lightgray;
 }
 .menu a:hover {
-  color: rgba(157,203,216,255)
+  color: rgba(106,68,47,255)
 }
 
 /* ************NAVIGATION BAR LINKS *************** */
 .links a i {
   margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: lightgray;
 }
 .links a i:hover {
-  color: rgba(157,203,216,255)
+  color: rgba(106,68,47,255)
 }
 /* **************TITLE*********** */
 .title {
-  margin: 0px 8% 0px 8%;
+  margin: 10% 8% 10% 8%;
   padding: 0px 0px 0px 0px;
-  display: inline-flex;
+  display: flex;
   text-align: center;
   /* width: 100vw; */
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fadeIn 1s forwards;
+  text-align: center;
 }
 
 .title h1 {
@@ -104,13 +106,13 @@ header {
   color: white;
   font-size: 93px;
   justify-content: center;
-  text-align: start;
+  text-align: center;
   margin: 0px 3px 0px 0px;
   line-height: 82px;
   cursor: default;
 }
 .title h1 span {
-  color: rgba(157,203,216,255);
+  color: rgba(106,68,47,255);
   font-size: 70px;
   animation-name: fadeIn;
   animation-duration: 0.5s;
@@ -140,7 +142,7 @@ header {
 /* ************** PAGE 1 BUTTON************  */
 .btn {
   text-align: left;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 button {
   padding: 18px 22px;
@@ -151,7 +153,7 @@ button {
 /* *********BUTTON-SERVICES************** */
 #button1 {
   margin-right: 10px;
-  border: 2px solid rgba(157,203,216,255);
+  border: 2px solid rgba(106,68,47,255);
   background-color: transparent;
   color: lightgray;
   cursor: pointer;
@@ -160,29 +162,29 @@ button {
 #button2 {
   margin-left: 10px;
   padding: 18px 42px;
-  background-color: rgba(157,203,216, 0.911);
-  border: 2px solid rgba(157,203,216, 0.911);
+  background-color: rgba(106,68,47, 0.911);
+  border: 2px solid rgba(106,68,47, 0.911);
   cursor: pointer;
 }
 #button1:hover {
-  background-color: rgba(157,203,216, 0.911);
+  background-color: rgba(106,68,47, 0.911);
   color: black;
 }
 
 #button2:hover {
-  background-color: rgba(157,203,216, 0.808);
-  border: 2px solid rgba(157,203,216, 0.808);
+  background-color: rgba(106,68,47, 0.808);
+  border: 2px solid rgba(106,68,47, 0.808);
   color: lightgray;
 }
 
 /* ************PAGE 2*************** */
 .container2 {
-  margin: 0px 8% 0px 8%;
+  margin: 0px 0% 0px 0%;
   padding: 0%;
 }
 /* ***************BIG RED BOX FOR QUOTES */
 .container2 .solganblock {
-  background-color: rgba(157,203,216, 0.911);
+  background-color: rgba(106,68,47, 0.911);
   margin: 0%;
   padding: 20px 0px;
   font-family: "Raleway", sans-serif;
@@ -224,7 +226,7 @@ button {
 }
 /* **********ABOUT ME TEXT************* */
 .aboutmetext {
-  background-color: rgba(0, 0, 0, 0.952);
+  background-color: rgba(0, 0, 0, 0.872);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,13 +265,14 @@ button {
 
 /* ****************PAGE 3*************** */
 .container3 {
-  margin: 0px 8% 0px 8%;
+  margin: 0px 0% 0px 0%;
   padding: 2%;
-  border-top: 5px solid rgba(157,203,216, 0.911);
+  border-top: 5px solid rgba(106,68,47, 0.911);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 8px;
-  background-image: url(images/check.gif);
+  background-color: rgba(18, 11, 11, 0.952);
+  background-image: linear-gradient(rgba(61, 49, 49, 0.872), rgba(18, 11, 11, 0.872));
 }
 /* ********HEADING PAGE 3************* */
 .headingpg3 {
@@ -290,7 +293,7 @@ button {
 }
 .headingpg3 h2 span {
   font-size: 76px;
-  color: rgba(157,203,216, 0.911);
+  color: rgba(106,68,47, 0.911);
   font-weight: bolder;
   line-height: 20px;
   font-family: "Lexend", sans-serif;
@@ -416,46 +419,85 @@ button {
   transform: translate3d(0, 0, 0);
 }
 
-/* Reviews */
-.review {
-  margin-left: 8%;
-  margin-right: 8%;
+/* ***************My Music************* */
+.myMusic {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 0px;
 }
-.reviews-container {
-  padding-top: 5%;
+audio {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.leftMyMusic {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.788);
+  background-image: linear-gradient(to bottom, #D2B48C, #A0522D, #8B4513, #654321);
   display: flex;
-  justify-content: space-evenly;
-}
-.review-box {
-  background-color: black;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-  border-radius: 10px;
-  width: 300px;
-  height: 200px;
-  padding: 20px;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 0px;
+}
+
+.rightMyMusic{
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.788);
+  background-image: linear-gradient(to bottom, #291c0d, #503416, #7d513b, #b07d64);
   display: flex;
-  position: relative;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 0px;
 }
-.review-desc {
+
+.song-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.song-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.song-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
   color: #fff;
 }
-.name {
-  position: absolute;
-  color: #fff;
-  bottom: 10px;
-  right: 10px;
+
+.song-title {
+  margin-top: 5px;
+  font-size: 18px;
 }
+
+.singer-name {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #888;
+}
+
 /* ***************PAGE 4************* */
 
 .container4 {
-  margin-left: 8%;
-  margin-right: 8%;
+  background-color: rgba(0, 0, 0, 0.788);
 }
 .inside{
   display: flex;
@@ -532,7 +574,7 @@ button {
 #sendbutton:hover {
   color: white;
   transition: 0.4s ease;
-  background-color: rgba(157,203,216, 0.733)
+  background-color: rgba(106,68,47, 0.733)
 }
 
 /* *************APP LINKS ******************** */
@@ -596,7 +638,7 @@ textarea {
   border-radius: 2px;
 }
 #submitbtn:hover {
-  background-color: rgba(157,203,216, 0.815);
+  background-color: rgba(106,68,47, 0.815);
   color: white;
 }
 
@@ -729,9 +771,6 @@ footer .rightside a {
   .right-side {
     display: none;
   }
-  .links a i {
-    margin: 4px 11px 0px 11px;
-  }
   .container2 {
     margin: 20px 0px 0px 0px;
   }
@@ -780,10 +819,32 @@ footer .rightside a {
     padding: 6% 0 0px 0;
     margin: 10px 0px 0px -28px;
   }
+  .myMusic{
+    display: block;
+  }
+  .leftMyMusic{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightMyMusic{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .song-image {
+    width: 100%;
+    height: auto;
+  }
   .reviews-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  video{
+    width:auto
   }
   footer {
     width: 100%;
@@ -846,9 +907,6 @@ footer .rightside a {
   }
   .menu a {
     margin: 4px 11px;
-  }
-  .links a i {
-    margin: 14px 11px 0px 11px;
   }
   .title h1 {
     font-size: 50px;
