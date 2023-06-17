@@ -72,7 +72,7 @@ header {
   color: white;
   text-decoration: none;
   margin: 0px 28px;
-  font-family: "Lexend", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: lightgray;
 }
 .menu a:hover {
@@ -287,17 +287,17 @@ button {
   text-transform: uppercase;
 }
 .headingpg3 h2 {
-  font-size: 55px;
-  font-weight: bolder;
+  font-size: 45px;
+  font-weight: 400;
   line-height: 59px;
-  font-family: "Lexend", sans-serif;
+  font-family: "Railway", sans-serif;
   margin: 0px 0px 0px 0px;
   color: lightgray;
 }
 .headingpg3 h2 span {
-  font-size: 76px;
+  font-size: 50px;
   color: rgba(106, 68, 47, 0.911);
-  font-weight: bolder;
+  font-weight: 500;
   line-height: 20px;
   font-family: "Lexend", sans-serif;
   letter-spacing: 1px;
@@ -601,7 +601,7 @@ audio::-webkit-media-controls-mute-button {
 .container4 .joinusonmobile {
   margin: 100px 0px;
   padding: 25px 0px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 4px;
   font-family: "Lexend", sans-serif;
   text-align: center;
@@ -612,18 +612,18 @@ audio::-webkit-media-controls-mute-button {
   margin: 38px 60px 0px 60px;
   padding: 5px 6px;
   font-size: 39px;
-  color: black;
+  color: white;
   font-weight: normal;
   text-transform: uppercase;
 }
 .joinusonmobile h2 span {
-  color: #8b4513;
+  color: white;
   font-weight: 400;
 }
 .joinusonmobile p {
   margin: -6px 0px 32px 0px;
   padding: 0px 0px 0px 0px;
-  color: black;
+  color: white;
   font-weight: normal;
   font-size: 19px;
 }
@@ -886,10 +886,10 @@ footer .rightside a {
     display: block;
   }
   .headingpg3 h2 {
-    font-size: 48px;
+    font-size: 38px;
   }
   .headingpg3 h2 span {
-    font-size: 66px;
+    font-size: 56px;
   }
   .hovereffect .overlay:before {
     top: 11px;
@@ -1058,10 +1058,7 @@ footer .rightside a {
     margin-bottom: 20px;
   }
   .headingpg3 h2 span {
-    font-size: 51px;
-  }
-  .headingpg3 h2 span {
-    font-size: 51px;
+    font-size: 41px;
   }
   .hovereffect .overlay:before {
     top: 19px;
