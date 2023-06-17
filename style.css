@@ -881,6 +881,9 @@ footer .rightside a {
   }
   .container3 {
     margin: 0px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    display: block;
   }
   .headingpg3 h2 {
     font-size: 48px;
@@ -1032,6 +1035,24 @@ footer .rightside a {
   .container3 {
     padding: 10%;
     display: flow-root;
+  }
+  .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
   }
   .headingpg3 h2 {
     margin-bottom: 20px;
