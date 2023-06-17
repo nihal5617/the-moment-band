@@ -57,38 +57,69 @@
         overflow-x: hidden;
       }
     </style>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const audio = document.querySelector("audio");
+        const audio2 = document.getElementById("audio2");
+        const playButton = document.getElementById("play-button");
+        const volumeButton = document.getElementById("volume-button");
+        const playButton2 = document.getElementById("play-button2");
+        const volumeButton2 = document.getElementById("volume-button2");
+
+        playButton.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+            playButton.classList.add("pause");
+          } else {
+            audio.pause();
+            playButton.classList.remove("pause");
+          }
+        });
+
+        volumeButton.addEventListener("click", () => {
+          if (audio.muted) {
+            audio.muted = false;
+            volumeButton.classList.remove("mute");
+          } else {
+            audio.muted = true;
+            volumeButton.classList.add("mute");
+          }
+        });
+
+        playButton2.addEventListener("click", () => {
+          if (audio2.paused) {
+            audio2.play();
+            playButton2.classList.add("pause");
+          } else {
+            audio2.pause();
+            playButton2.classList.remove("pause");
+          }
+        });
+
+        volumeButton2.addEventListener("click", () => {
+          if (audio2.muted) {
+            audio2.muted = false;
+            volumeButton2.classList.remove("mute");
+          } else {
+            audio2.muted = true;
+            volumeButton2.classList.add("mute");
+          }
+        });
+
+        audio.addEventListener("timeupdate", () => {
+          const currentTime = audio.currentTime;
+          const duration = audio.duration;
+          const timeline = document.getElementById("timeline");
+          const progress = (currentTime / duration) * 100;
+          timeline.style.width = `${progress}%`;
+        });
+      });
+    </script>
   </head>
 
   <body>
     <sec>
       <section>
-        <!-- <div>
-          <header>
-            <div class="logo">
-              <a href="/"><img src="images/logo.png" alt="" /></a>
-            </div>
-            <div class="menu">
-              <a href="">Home</a>
-              <a href="#aboutus">About Us</a>
-              <a href="#services">Services</a>
-              <a href="#reviews">Reviews</a>
-              <a href="#contact">Contact Us</a>
-            </div>
-
-            <div class="links">
-              <a target="_blank" href="#"
-                ><i class="fa fa-instagram fa-lg" aria-hidden="true"></i
-              ></a>
-              <a target="_blank" href="#"
-                ><i class="fa fa-facebook fa-lg" aria-hidden="true"></i
-              ></a>
-              <a target="_blank" href="#"
-                ><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i
-              ></a>
-            </div>
-          </header>
-        </div> -->
-
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <div class="logo">
@@ -252,10 +283,13 @@
               />
               <h3 class="song-title">Teri Mitti - Unplugged</h3>
               <h4 class="singer-name">Neel Jain</h4>
-              <audio controls>
-                <source src="images/terimitti.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
+              <audio src="images/terimitti.mp3" controls></audio>
+              <div class="timeline"></div>
+              <div class="controls">
+                <button class="volume" id="volume-button"></button>
+                <button class="play" id="play-button"></button>
+                <button class="more" onclick=""></button>
+              </div>
             </div>
           </div>
           <div class="rightMyMusic">
@@ -263,11 +297,14 @@
               <h2 class="song-name">I Do The Moment</h2>
               <img class="song-image" src="images/m2img.jpg" alt="Song Image" />
               <h3 class="song-title">I D💖- Unplugged</h3>
-              <h4 class="singer-name">B Praak</h4>
-              <audio controls>
-                <source src="images/m2.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
+              <h4 class="singer-name">Neel Jain</h4>
+              <audio src="images/m2.mp3" id="audio2" controls></audio>
+              
+              <div class="controls">
+                <button class="volume" id="volume-button2"></button>
+                <button class="play" id="play-button2"></button>
+                <button class="more" onclick=""></button>
+              </div>
             </div>
           </div>
         </div>
@@ -292,7 +329,7 @@
           <div class="leftside">
             <div class="location">
               <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i
-              >&nbsp;&nbsp; Goregaon <span>Mumbai, India</span>
+              >&nbsp;&nbsp; Ghatkoper West, <span>Mumbai, India</span>
             </div>
             <div class="telephone">
               <i class="fa fa-phone fa-lg" aria-hidden="true"></i
@@ -319,6 +356,9 @@
                 href="https://m.youtube.com/@themoment_official?sub_confirmation=1"
                 ><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i
               ></a>
+              <a target="_blank" href="">
+                <i class="fa fa-spotify fa-lg" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
           <div class="rightside">
@@ -331,7 +371,7 @@
                   scrolling="no"
                   marginheight="0"
                   marginwidth="0"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=44/103,Mahavir%20Darshan,Tilak%20Nagar,%20Goregaon%20West,%20Mumbai-400104+(The%20Moment%20Band)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=3VPV%209VQ%20Mahindra%20Park,%20Lal%20Bahadur%20Shastri%20Rd,%20Narayan%20Nagar,%20Ghatkopar%20West,%20Mumbai,%20Maharashtra%20400086+(The%20Moment%20Band)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                   ><a href="https://www.maps.ie/distance-area-calculator.html"
                     >distance maps</a
                   ></iframe

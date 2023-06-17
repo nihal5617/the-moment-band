@@ -76,7 +76,7 @@ header {
   color: lightgray;
 }
 .menu a:hover {
-  color: rgba(106,68,47,255)
+  color: rgba(106, 68, 47, 255);
 }
 
 /* ************NAVIGATION BAR LINKS *************** */
@@ -87,7 +87,7 @@ header {
   color: lightgray;
 }
 .links a i:hover {
-  color: rgba(106,68,47,255)
+  color: rgba(106, 68, 47, 255);
 }
 /* **************TITLE*********** */
 .title {
@@ -112,7 +112,7 @@ header {
   cursor: default;
 }
 .title h1 span {
-  color: rgba(106,68,47,255);
+  color: rgba(106, 68, 47, 255);
   font-size: 70px;
   animation-name: fadeIn;
   animation-duration: 0.5s;
@@ -153,7 +153,7 @@ button {
 /* *********BUTTON-SERVICES************** */
 #button1 {
   margin-right: 10px;
-  border: 2px solid rgba(106,68,47,255);
+  border: 2px solid rgba(106, 68, 47, 255);
   background-color: transparent;
   color: lightgray;
   cursor: pointer;
@@ -162,18 +162,18 @@ button {
 #button2 {
   margin-left: 10px;
   padding: 18px 42px;
-  background-color: rgba(106,68,47, 0.911);
-  border: 2px solid rgba(106,68,47, 0.911);
+  background-color: rgba(106, 68, 47, 0.911);
+  border: 2px solid rgba(106, 68, 47, 0.911);
   cursor: pointer;
 }
 #button1:hover {
-  background-color: rgba(106,68,47, 0.911);
+  background-color: rgba(106, 68, 47, 0.911);
   color: black;
 }
 
 #button2:hover {
-  background-color: rgba(106,68,47, 0.808);
-  border: 2px solid rgba(106,68,47, 0.808);
+  background-color: rgba(106, 68, 47, 0.808);
+  border: 2px solid rgba(106, 68, 47, 0.808);
   color: lightgray;
 }
 
@@ -184,7 +184,7 @@ button {
 }
 /* ***************BIG RED BOX FOR QUOTES */
 .container2 .solganblock {
-  background-color: rgba(106,68,47, 0.911);
+  background-color: rgba(106, 68, 47, 0.911);
   margin: 0%;
   padding: 20px 0px;
   font-family: "Raleway", sans-serif;
@@ -267,12 +267,15 @@ button {
 .container3 {
   margin: 0px 0% 0px 0%;
   padding: 2%;
-  border-top: 5px solid rgba(106,68,47, 0.911);
+  border-top: 5px solid rgba(106, 68, 47, 0.911);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 8px;
   background-color: rgba(18, 11, 11, 0.952);
-  background-image: linear-gradient(rgba(61, 49, 49, 0.872), rgba(18, 11, 11, 0.872));
+  background-image: linear-gradient(
+    rgba(61, 49, 49, 0.872),
+    rgba(18, 11, 11, 0.872)
+  );
 }
 /* ********HEADING PAGE 3************* */
 .headingpg3 {
@@ -293,7 +296,7 @@ button {
 }
 .headingpg3 h2 span {
   font-size: 76px;
-  color: rgba(106,68,47, 0.911);
+  color: rgba(106, 68, 47, 0.911);
   font-weight: bolder;
   line-height: 20px;
   font-family: "Lexend", sans-serif;
@@ -421,7 +424,7 @@ button {
 
 /* ***************My Music************* */
 .myMusic {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
@@ -439,7 +442,13 @@ audio {
   width: 50%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.788);
-  background-image: linear-gradient(to bottom, #D2B48C, #A0522D, #8B4513, #654321);
+  background-image: linear-gradient(
+    to bottom,
+    #d2b48c,
+    #a0522d,
+    #8b4513,
+    #654321
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,17 +457,88 @@ audio {
   margin: 0px 0px 0px 0px;
 }
 
-.rightMyMusic{
+.rightMyMusic {
   width: 50%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.788);
-  background-image: linear-gradient(to bottom, #291c0d, #503416, #7d513b, #b07d64);
+  background-image: linear-gradient(
+    to bottom,
+    #291c0d,
+    #503416,
+    #7d513b,
+    #b07d64
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0px 0px 0px 0px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.controls button {
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+  border: #000;
+  border-width: 1px;
+}
+.play {
+  background: url(images/play.png) no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.pause{
+  background: url(images/pause.png) no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.volume {
+  background: url(images/volume.png) no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.mute {
+  background: url(images/mute.png) no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.more{
+  background: url(images/send.png) no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+audio::-webkit-media-controls-panel {
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px;
+}
+audio::-webkit-media-controls-enclosure{
+  background:transparent
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-mute-button {
+  display: none !important;
 }
 
 .song-container {
@@ -499,7 +579,7 @@ audio {
 .container4 {
   background-color: rgba(0, 0, 0, 0.788);
 }
-.inside{
+.inside {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -537,7 +617,7 @@ audio {
   text-transform: uppercase;
 }
 .joinusonmobile h2 span {
-  color: #9dcbd8;
+  color: #8b4513;
   font-weight: 400;
 }
 .joinusonmobile p {
@@ -574,7 +654,7 @@ audio {
 #sendbutton:hover {
   color: white;
   transition: 0.4s ease;
-  background-color: rgba(106,68,47, 0.733)
+  background-color: rgba(106, 68, 47, 0.733);
 }
 
 /* *************APP LINKS ******************** */
@@ -638,7 +718,7 @@ textarea {
   border-radius: 2px;
 }
 #submitbtn:hover {
-  background-color: rgba(106,68,47, 0.815);
+  background-color: rgba(106, 68, 47, 0.815);
   color: white;
 }
 
@@ -799,7 +879,7 @@ footer .rightside a {
   .recent {
     margin: 0px 0px 0px 0px;
   }
-  .container3{
+  .container3 {
     margin: 0px 0px 0px 0px;
   }
   .headingpg3 h2 {
@@ -819,16 +899,16 @@ footer .rightside a {
     padding: 6% 0 0px 0;
     margin: 10px 0px 0px -28px;
   }
-  .myMusic{
+  .myMusic {
     display: block;
   }
-  .leftMyMusic{
+  .leftMyMusic {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .rightMyMusic{
+  .rightMyMusic {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -838,13 +918,13 @@ footer .rightside a {
     width: 100%;
     height: auto;
   }
-  .reviews-container{
+  .reviews-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  video{
-    width:auto
+  video {
+    width: auto;
   }
   footer {
     width: 100%;
