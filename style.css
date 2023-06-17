@@ -206,7 +206,7 @@ button {
 .solganblock p {
   margin-top: 0%;
   text-align: center;
-  font-size: 21px;
+  font-size: 30px;
   font-weight: lighter;
   animation-name: fadeIn;
   animation-duration: 0.5s;
@@ -444,10 +444,10 @@ audio {
   background-color: rgba(0, 0, 0, 0.788);
   background-image: linear-gradient(
     to bottom,
-    #d2b48c,
-    #a0522d,
-    #8b4513,
-    #654321
+    #291c0d,
+    #503416,
+    #7d513b,
+    #b07d64
   );
   display: flex;
   justify-content: center;
@@ -461,12 +461,13 @@ audio {
   width: 50%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.788);
+
   background-image: linear-gradient(
     to bottom,
-    #291c0d,
-    #503416,
-    #7d513b,
-    #b07d64
+    #d2b48c,
+    #a0522d,
+    #8b4513,
+    #654321
   );
   display: flex;
   justify-content: center;
@@ -558,7 +559,7 @@ audio::-webkit-media-controls-mute-button {
 
 .song-name {
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
@@ -621,16 +622,16 @@ audio::-webkit-media-controls-mute-button {
   font-weight: 400;
 }
 .joinusonmobile p {
-  margin: -6px 0px 32px 0px;
+  margin: -6px 0px 20px 0px;
   padding: 0px 0px 0px 0px;
   color: white;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 39px;
 }
 
 /* *************PHONE NUMBER FIELD**************** */
 .container4 .phoneno {
-  margin: 7px 0px;
+  margin: 0px 0px;
 }
 #phnumber {
   margin: 15px 5px 15px 0px;
@@ -751,7 +752,7 @@ footer .location,
   margin-top: 18px;
 }
 footer .leftside a {
-  color: white;
+  color: transparent
 }
 
 /* *************FOOTER RIGHT PART *************** */
@@ -971,7 +972,7 @@ footer .rightside a {
   }
   .title h1 p {
     display: block;
-    font-size: medium;
+    font-size: small;
     font-family: sans-serif;
     color: lightgray;
     line-height: normal;
@@ -997,7 +998,7 @@ footer .rightside a {
     line-height: 45px;
   }
   .title h1 span {
-    font-size: 59px;
+    font-size: 47px;
   }
   button {
     padding: 14px 14px;
@@ -1013,7 +1014,7 @@ footer .rightside a {
     font-size: 56px;
   }
   .solganblock p {
-    font-size: 13px;
+    font-size: 20px;
   }
   .aboutme {
     display: contents;
@@ -1082,15 +1083,15 @@ footer .rightside a {
     font-size: 34px;
   }
   .container4 .joinusonmobile {
-    margin: 100px 12px;
+    margin: 100px 0px;
   }
   .joinusonmobile h2 {
     margin: 6px 43px 0px 43px;
     padding: 5px 4px;
-    font-size: 33px;
+    font-size: 25px;
   }
   .joinusonmobile p {
-    font-size: 14px;
+    font-size: 25px;
   }
   #phnumber {
     margin: 15px 5px 15px 0px;
