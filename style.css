@@ -291,9 +291,9 @@ button {
 }
 .headingpg3 h2 {
   font-size: 45px;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 59px;
-  font-family: "Railway";
+  font-family: "Times New Roman";
   margin: 0px 0px 0px 0px;
   color: lightgray;
 }
@@ -874,6 +874,8 @@ footer .rightside a {
   }
   .aboutmetext p {
     margin: 9px 0px;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .review {
     margin-left: 0%;
