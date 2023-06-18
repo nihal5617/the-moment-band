@@ -1,7 +1,7 @@
 body {
-  background-image: url(images/profile.jpg);
+  background-image: url(images/background.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-position-x: 0px;
   background-attachment: fixed;
 }
@@ -47,7 +47,7 @@ body {
 /* ***********PAGE 1***************** */
 .container1 {
   width: 100vw;
-  margin: 40px 0px 40px 0px;
+  margin: 300px 0px 10px 0px;
   padding: 0%;
 }
 
@@ -104,6 +104,7 @@ header {
 .title h1 {
   font-family: "Lexend", sans-serif;
   color: white;
+  font-weight: 200;
   font-size: 93px;
   justify-content: center;
   text-align: center;
@@ -830,6 +831,9 @@ footer .rightside a {
 
 /* ******************RESPONSIVNESS TAB VIEW******************* */
 @media (max-width: 801px) {
+  body{
+    background-position-x: 50%;
+  }
   .container-fluid {
     margin-left: 0% !important;
   }
@@ -961,6 +965,7 @@ footer .rightside a {
 /* ****************REPONSIVNESS MOBILE VIEW**************** */
 @media (max-width: 481px) {
   .container1 {
+    margin: 200px 0px 10px 0px;
     background-position-x: 56%;
   }
   header {
