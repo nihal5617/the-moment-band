@@ -979,6 +979,7 @@ footer .rightside a {
   }
   .title h1 p {
     display: block;
+    margin-top: 10px;
     font-size: small;
     color: lightgray;
     line-height: normal;
