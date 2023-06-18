@@ -277,7 +277,7 @@ button {
     rgba(18, 11, 11, 0.872)
   );
 }
-.container3 p{
+.container3 p {
   display: none;
 }
 /* ********HEADING PAGE 3************* */
@@ -291,18 +291,18 @@ button {
 }
 .headingpg3 h2 {
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 59px;
-  font-family: "Railway", sans-serif;
+  font-family: "Railway";
   margin: 0px 0px 0px 0px;
   color: lightgray;
 }
 .headingpg3 h2 span {
   font-size: 50px;
   color: rgba(106, 68, 47, 0.911);
-  font-weight: 500;
+  font-weight: 100;
   line-height: 20px;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   letter-spacing: 1px;
   margin-left: 8px;
 }
@@ -500,7 +500,7 @@ audio {
   background-position: center;
   background-size: 80%;
 }
-.pause{
+.pause {
   background: url(images/pause.png) no-repeat;
   background-position: center;
   background-size: 80%;
@@ -515,7 +515,7 @@ audio {
   background-position: center;
   background-size: 50%;
 }
-.more{
+.more {
   background: url(images/send.png) no-repeat;
   background-position: center;
   background-size: 50%;
@@ -530,8 +530,8 @@ audio::-webkit-media-controls-panel {
   border-radius: 3px;
   padding: 5px;
 }
-audio::-webkit-media-controls-enclosure{
-  background:transparent
+audio::-webkit-media-controls-enclosure {
+  background: transparent;
 }
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-pause-button {
@@ -607,7 +607,7 @@ audio::-webkit-media-controls-mute-button {
   padding: 25px 0px;
   background-color: transparent;
   border-radius: 4px;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   text-align: center;
 }
 
@@ -755,7 +755,7 @@ footer .location,
   margin-top: 18px;
 }
 footer .leftside a {
-  color: transparent
+  color: transparent;
 }
 
 /* *************FOOTER RIGHT PART *************** */
@@ -833,7 +833,7 @@ footer .rightside a {
 
 /* ******************RESPONSIVNESS TAB VIEW******************* */
 @media (max-width: 801px) {
-  body{
+  body {
     background-position-x: 50%;
   }
   .container-fluid {
@@ -1045,26 +1045,26 @@ footer .rightside a {
     padding: 10%;
     display: flow-root;
   }
-  .container3 p{
+  .container3 p {
     display: block;
     color: #fff;
     text-align: center;
     font-weight: 200;
     margin-bottom: 1.5rem;
   }
-  .box1{
+  .box1 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
   }
-  .box2{
+  .box2 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
   }
-  .box3{
+  .box3 {
     display: flex;
     align-items: center;
     justify-content: center;

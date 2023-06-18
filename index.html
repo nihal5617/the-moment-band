@@ -68,6 +68,10 @@
 
         playButton.addEventListener("click", () => {
           if (audio.paused) {
+            if (audio2.played) {
+              audio2.pause();
+              playButton2.classList.remove("pause");
+            }
             audio.play();
             playButton.classList.add("pause");
           } else {
@@ -88,6 +92,10 @@
 
         playButton2.addEventListener("click", () => {
           if (audio2.paused) {
+            if (audio.played) {
+              audio.pause();
+              playButton.classList.remove("pause");
+            }
             audio2.play();
             playButton2.classList.add("pause");
           } else {
@@ -319,15 +327,15 @@
             </div>
             <div class="telephone">
               <i class="fa fa-phone fa-lg" aria-hidden="true"></i
-              >&nbsp;&nbsp;+91 9769289294
+              >&nbsp;&nbsp;+91 9769289294<br/>(Isha Ranavat - Manager)
             </div>
 
             <div class="mail">
               <i class="fa fa-envelope fa-lg" aria-hidden="true"></i
               >&nbsp;&nbsp;<a
-                href="mailto:isha.r@themoment-band.com"
+                href="mailto:neel.jain@themomentband.com"
                 style="color: white"
-                >isha.r@themoment-band.com</a
+                >neel.jain@themomentband.com</a
               >
             </div>
             <div class="links">
