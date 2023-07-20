@@ -557,7 +557,7 @@ audio::-webkit-media-controls-mute-button {
 .song-image {
   width: 400px;
   height: 400px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .song-name {
