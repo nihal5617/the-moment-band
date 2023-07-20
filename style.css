@@ -741,7 +741,7 @@ footer .leftside {
   width: 100%;
   text-align: center;
   padding: 0px 90px;
-  font-family: "Lexend", sans-serif;
+  /* font-family: "Lexend", sans-serif; */
 }
 footer .leftside .fa {
   background-color: black;
