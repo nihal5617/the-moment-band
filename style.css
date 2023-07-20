@@ -937,6 +937,8 @@ footer .rightside a {
   }
   video {
     width: 350px;
+    min-height: 270px;
+    height: auto;
   }
   footer {
     width: 100%;
