@@ -936,7 +936,7 @@ footer .rightside a {
     align-items: center;
   }
   video {
-    width: auto;
+    /* width: auto; */
   }
   footer {
     width: 100%;
